@@ -41,13 +41,13 @@ try:
 except Exception:
   pass
 c = tk.Canvas(root, width = root.winfo_screenwidth(),
-height = root.winfo_screenheight(), bg= "#246f24", highlightthickness=0)
+height = root.winfo_screenheight(), bg= "#129ae3", highlightthickness=0)
 root.lift()
 root.attributes("-topmost", True)
-root.configure(background="#246f24")
+root.configure(background="#129ae3")
 c.pack()
 c.create_text(100, 150, anchor="w", fill="white", font="Ebrima 100", text=":(")
-c.create_text(100, 300, anchor="w", fill="white", font="Ebrima 15", text="Your Windows Insider build ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you")
+c.create_text(100, 300, anchor="w", fill="white", font="Ebrima 15", text="Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you")
 loader = c.create_text(100, 350, anchor = "w", fill="white", font="Ebrima 15", text="0 % complete")
 try:
   c.create_image(150, 425, image=qr)
